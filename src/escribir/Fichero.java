@@ -54,8 +54,8 @@ public class Fichero {
             {
                 // ollo ! instanciamos os obxectos tipo persoa dentro do bucle
 
-                Persoa p = new Persoa(alumno("nome :"), alumno("apelido :"), nota("edade :"), alumno("nome mascota :"), nota(" numero patas :"));
-                esc.writeObject(p);
+                Alumno al = new Alumno(alumno("nome :"), nota("nota :"));
+                fich.writeObject(al);
 
             }
 
@@ -66,7 +66,7 @@ public class Fichero {
                 try {
                     esc.close();
                 } catch (IOException ex) {
-                    Logger.getLogger(metodos.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(Fichero.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         }
